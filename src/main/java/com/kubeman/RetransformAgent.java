@@ -31,10 +31,8 @@ public class RetransformAgent {
                         }
                         return class1.toBytecode();
                     } catch (NotFoundException | CannotCompileException e) {
-                        // TODO Auto-generated catch block
                         e.printStackTrace();
                     } catch (IOException e) {
-                        // TODO Auto-generated catch block
                         e.printStackTrace();
                     }
                 }
