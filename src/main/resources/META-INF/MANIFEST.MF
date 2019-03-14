@@ -1,0 +1,2 @@
+Agent-Class: com.kubeman.RetransformAgent
+Can-Retransform-Classes: true
