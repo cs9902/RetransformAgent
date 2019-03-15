@@ -27,6 +27,11 @@ import java.util.Map;
  *          "line": 123,
  *          "code": ""
  *          }
+ *     ],
+ *     "class-path": [
+ *     "D:/Progra~1/Java/jdk1.8.0_191/lib/tools.jar",
+ *     "F:/apache-maven-3.3.9/localrepo/org/javassist/javassist/3.24.1-GA/javassist-3.24.1-GA.jar",
+ *     "F:/apache-maven-3.3.9/localrepo/com/alibaba/fastjson/1.2.56/fastjson-1.2.56.jar"
  *     ]
  * }
  *
