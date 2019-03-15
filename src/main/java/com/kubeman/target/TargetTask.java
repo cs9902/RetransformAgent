@@ -1,8 +1,8 @@
 package com.kubeman.target;
 
-public class TargetTask {
+class TargetTask {
 
-    protected void doTask() {
+    void doTask() {
 
         System.out.println("a");
 

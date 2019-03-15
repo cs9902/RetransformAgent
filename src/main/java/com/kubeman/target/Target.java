@@ -13,6 +13,7 @@ public class Target {
                 Thread.sleep(5000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
+                System.exit(1);
             }
 
         }
