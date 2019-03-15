@@ -11,9 +11,7 @@ public class Main {
             VirtualMachine vm = VirtualMachine.attach(pid);
             vm.loadAgent(jarPath(), args[1]);
 
-            if (args.length == 2 || (args.length == 3 && args[2].equals("detach"))) {
-                vm.detach();
-            }
+            vm.detach();
 
         } catch (Exception e) {
             e.printStackTrace();
