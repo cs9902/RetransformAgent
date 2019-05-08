@@ -66,21 +66,21 @@ public class RetransformAgent {
                     CtMethod ctMethod = class1.getDeclaredMethod(targetMethod);
                     if (!ctMethod.isEmpty()) {
 
-                        if (isNotBlank(beforeCode)) {
+                        if (!isBlank(beforeCode)) {
                             ctMethod.insertBefore(beforeCode);
                         }
 
-                        if (isNotBlank(afterCode)) {
+                        if (!isBlank(afterCode)) {
                             ctMethod.insertAfter(afterCode, false);
                         }
 
-                        if (isNotBlank(finalCode)) {
+                        if (!isBlank(finalCode)) {
                             ctMethod.insertAfter(finalCode, true);
                         }
 
                         for (Integer line : injectCodes.keySet()) {
                             String lineCode = injectCodes.get(line);
-                            if (isNotBlank(lineCode)) {
+                            if (!isBlank(lineCode)) {
                                 ctMethod.insertAt(line, lineCode);
                             }
                         }
@@ -112,8 +112,8 @@ public class RetransformAgent {
         }
     }
 
-    private static boolean isNotBlank(String string) {
-        return string != null && !string.trim().equals("");
+    private static boolean isBlank(String string) {
+        return string == null || string.trim().equals("");
     }
 
 }
